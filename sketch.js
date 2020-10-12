@@ -74,18 +74,18 @@ function draw() {
   
   if(obstaclesGroup.isTouching(player)) {
     player.scale = 0.1;
-    //gameState = END; // make it so second collision is detected. 
+    gameState = END; // make it so second collision is detected. 
     
   } 
   
 
   
   if(gameState === END) {
-    //backdrop.velocityX = 0;
-    //obstaclesGroup.setVelocityXEach(0);
-    //foodGroup.setVelocityXEach(0);
-    //obstaclesGroup.setLifetimeEach(-1);
-    //foodGroup.setLifetimeEach(-1);  
+    backdrop.velocityX = 0;
+    obstaclesGroup.setVelocityXEach(0);
+    foodGroup.setVelocityXEach(0);
+    obstaclesGroup.setLifetimeEach(-1);
+    foodGroup.setLifetimeEach(-1);  
     
     
   }
